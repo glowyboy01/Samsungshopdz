@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Samsung login</title>
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+</head>
+<body>
+
+<div class="login-page">
+	<div class="form">
+		<form class="register-form">
+			<input type="text" placeholder="name"/>
+			<input type="text" placeholder="Password"/>
+			<input type="text" placeholder="Email ID"/>
+			<button>Create</button>
+			<p class="message">already Registered? <a href="#">Login</a></p>	
+			<p class="message">Not interested?<a href="file:///C:/Users/Iphone/Desktop/project%20final/index.html#">Home</a></p>
+		</form>
+		<form class="login-form">
+			<input type="text" placeholder="user name">
+			<input type="Password" placeholder="Password">
+			<button>Login</button>			
+			<p class="message">Not Registered?<a href="#">Register</a></p>
+			<p class="message">Not interested?<a href="file:///C:/Users/Iphone/Desktop/project%20final/index.html#">Home</a></p>
+		</form>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">
+</script>
+<script>
+	$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity :"toggle"},"slow");
+	});
+
+</script>
+
+</body>
+</html>
